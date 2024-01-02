@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shader Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="glCanvas" width="2000" height="1000"></canvas>
+    <script type="module" src="bundle.js"></script>
+
+    <!-- Chatbox for user input -->
+    <div id="chatbox" style="position: fixed; bottom: 10px; left: 10px; right: 10px;">
+        <textarea id="userInput" placeholder="Enter your shader request here..."
+            style="width: calc(100% - 110px); height: 50px; float: left;"></textarea>
+        <button id="sendButton" style="width: 100px; height: 56px; float: right;">Send</button>
+    </div>
+</body>
+
+</html>

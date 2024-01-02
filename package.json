@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "openai": "^4.24.1"
+  },
+  "scripts": {
+    "build": "browserify -t [ babelify --presets [@babel/preset-env] ] script.js -o bundle.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.7",
+    "babelify": "^10.0.0",
+    "browserify": "*"
+  }
+}
