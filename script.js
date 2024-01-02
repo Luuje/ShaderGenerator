@@ -46,7 +46,6 @@ async function init() {
 
         if (deltaTime > interval * 0.001) {
             let elapsedTime = now - startTime; // Total elapsed time in seconds
-            console.log("rendering ");
             drawScene(gl, programInfo, buffers, elapsedTime);
         }
 
@@ -174,7 +173,6 @@ async function updateShader(glslCode) {
     }
 
     // Reinitialize the shader program with the new source
-
     const shaderProgram = initShaderProgram(gl, vertexShaderSource, fragmentShaderSource);
     
     if (shaderProgram === null) {

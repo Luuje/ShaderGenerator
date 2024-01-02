@@ -51,7 +51,6 @@ function _init() {
             lastTime = now;
             if (deltaTime > interval * 0.001) {
               var elapsedTime = now - startTime; // Total elapsed time in seconds
-              console.log("rendering ");
               drawScene(gl, programInfo, buffers, elapsedTime);
             }
             requestAnimationFrame(render);
